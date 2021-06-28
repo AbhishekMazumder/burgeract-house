@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Menus from './components/Menus';
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -38,6 +39,7 @@ function App() {
           <Header />
 					<Menus />
 					<About />
+					<Contact />
 				</>
 			)}
 		</div>

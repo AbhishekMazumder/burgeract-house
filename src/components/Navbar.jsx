@@ -17,7 +17,7 @@ const Navbar = () => {
 
 	return (
 		<nav className={nav ? 'nav active' : 'nav'}>
-			<Link to="main" className="logo">
+			<Link to="main" className="logo" smooth={true} duration={1500}>
 				<img src={logo} alt="burgeract-house logo" />
 			</Link>
 
@@ -28,16 +28,24 @@ const Navbar = () => {
 
 			<ul className="menu">
 				<li>
-					<Link to="#">Header</Link>
+					<Link to="main" smooth={true} duration={1500}>
+						Header
+					</Link>
 				</li>
 				<li>
-					<Link to="#">Menus</Link>
+					<Link to="products" smooth={true} duration={1500}>
+						Menus
+					</Link>
 				</li>
 				<li>
-					<Link to="#">About</Link>
+					<Link to="about" smooth={true} duration={1500}>
+						About
+					</Link>
 				</li>
 				<li>
-					<Link to="#">Contact Us</Link>
+					<Link to="contact" smooth={true} duration={1500}>
+						Contact Us
+					</Link>
 				</li>
 			</ul>
 		</nav>
