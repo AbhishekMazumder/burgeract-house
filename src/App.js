@@ -6,6 +6,7 @@ import PropagateLoader from 'react-spinners/PropagateLoader';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Menus from './components/Menus';
+import About from './components/About';
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ function App() {
 					<Navbar />
           <Header />
 					<Menus />
+					<About />
 				</>
 			)}
 		</div>
