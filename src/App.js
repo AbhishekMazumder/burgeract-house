@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 import PropagateLoader from 'react-spinners/PropagateLoader';
 
 import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -17,7 +18,7 @@ function App() {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 5000);
+		}, 2000);
 	}, []);
 
 	return (
@@ -32,6 +33,7 @@ function App() {
 			) : (
 				<>
 					<Navbar />
+          <Header />
 				</>
 			)}
 		</div>
